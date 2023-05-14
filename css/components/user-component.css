@@ -5,22 +5,29 @@
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+  padding: var(--horizontal-space);
 }
 
 .user-componet__avatar {
   width: 70px;
   height: 70px;
-  border-radius: 27px;
+  border-radius: 30px;
   margin-right: 20px;
+  border: 1px solid black;
 }
 
 .user-component__title {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-.user-component__subtitlt {
+.user-component__subtitle {
   margin-top: 5px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.user-componet__avatar--xl {
+  width: 80px;
+  height: 80px;
 }
