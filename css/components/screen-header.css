@@ -14,3 +14,20 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.cog__dot-position {
+  position: relative;
+}
+
+.cog__dot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 70px;
+  bottom: 25px;
+}
