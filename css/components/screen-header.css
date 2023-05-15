@@ -31,3 +31,20 @@
   left: 70px;
   bottom: 25px;
 }
+
+.cog__dot-position2 {
+  position: relative;
+}
+
+.cog__dot2 {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 120px;
+  bottom: 25px;
+}
