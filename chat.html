@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Talk</title>
+    <title>Chat Saewoo - Kokoa Talk</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
@@ -23,137 +23,45 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Saewoo</h1>
+      </div>
+      <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span
-          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
-        ></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/새우.jpg"
-            class="user-componet__avatar user-componet__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Saewoo</h4>
-            <h6 class="user-component__subtitle">
-              where are you? plz come home early
-            </h6>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Wedsday, May 17, 2023</div>
+      <div class="message-row">
+        <img src="img/새우.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">Saewoo</span>
+          <div class="messagr__info">
+            <span class="message__bubble"
+              >where are you? plz come home early</span
+            >
+            <span class="message__time">03:18</span>
           </div>
-        </div>
-
-        <div class="user-component__column">
-          <span class="user-component__time">03:18</span>
-          <div class="badge">8</div>
         </div>
       </div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/탄.jpg"
-            class="user-componet__avatar user-componet__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Tan</h4>
-            <h6 class="user-component__subtitle">where are you? hungry</h6>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="messagr__info">
+            <span class="message__bubble">Okay..</span>
+            <span class="message__time">03:18</span>
           </div>
-        </div>
-
-        <div class="user-component__column">
-          <span class="user-component__time">08:28</span>
-          <div class="badge">12</div>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/밥풀.jpg"
-            class="user-componet__avatar user-componet__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Bobpuri</h4>
-            <h6 class="user-component__subtitle">meow~~meow~~purring</h6>
-          </div>
-        </div>
-
-        <div class="user-component__column">
-          <span class="user-component__time">04:27</span>
-          <div class="badge">2</div>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/깐쇼.jpg"
-            class="user-componet__avatar user-componet__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">KKansho</h4>
-            <h6 class="user-component__subtitle">give me chur!!</h6>
-          </div>
-        </div>
-
-        <div class="user-component__column">
-          <span class="user-component__time">12:25</span>
-          <div class="badge">3</div>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/누누.jpg"
-            class="user-componet__avatar user-componet__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">imnunu</h4>
-            <h6 class="user-component__subtitle">
-              I need to go pee-pee!! hurry
-            </h6>
-          </div>
-        </div>
-
-        <div class="user-component__column">
-          <span class="user-component__time">11:08</span>
-          <div class="badge">3</div>
         </div>
       </div>
     </main>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chat.html">
-            <span class="nav__notification badge">28</span>
-            <i class="fas fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav__notification2"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
